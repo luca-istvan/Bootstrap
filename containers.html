@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Containers</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+            color: #263238;
+        }
+
+        .cabecalho {
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+        }
+
+        .exemplo {
+            border-radius: 12px;
+            margin-top: 25px;
+            padding: 25px;
+            box-shadow: 0 3px 12px #00000012;
+        }
+
+        .exemplo h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: #1d4ed8;
+            padding: 5px 10px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            font-family: monospace;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 22px;
+            background-color: #172554;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>Containers no Bootstrap</h1>
+        <p class="mb-0">Entenda como organizar o espaço de uma página web</p>
+    </header>
+
+    <main class="container py-4">
+
+        <section class="bg-white exemplo">
+            <h2>O que são containers?</h2>
+            <p>
+                Containers são elementos utilizados para organizar e centralizar
+                o conteúdo de uma página. No Bootstrap, existem diferentes classes
+                que controlam a largura do conteúdo conforme o tamanho da tela.
+            </p>
+        </section>
+
+        <section class="bg-white exemplo">
+            <span class="etiqueta">.container</span>
+            <h2>Container padrão</h2>
+            <p>Possui largura máxima definida conforme o tamanho da tela e centraliza o conteúdo.</p>
+            <div class="container bg-primary text-white rounded p-3">
+                Área centralizada
+            </div>
+        </section>
+
+        <section class="bg-white exemplo">
+            <span class="etiqueta">.container-fluid</span>
+            <h2>Container fluido</h2>
+            <p>Ocupa 100% da largura disponível da tela.</p>
+            <div class="container-fluid bg-success text-white rounded p-3">
+                Área de largura total
+            </div>
+        </section>
+
+        <section class="bg-white exemplo">
+            <span class="etiqueta">.container-sm</span>
+            <h2>Container SM</h2>
+            <p>Ocupa toda a largura em telas menores e limita a largura a partir de 576px.</p>
+            <div class="container-sm bg-warning rounded p-3">
+                Exemplo de container SM
+            </div>
+        </section>
+
+        <section class="bg-white exemplo">
+            <span class="etiqueta">.container-md</span>
+            <h2>Container MD</h2>
+            <p>Limita a largura a partir de telas médias, com breakpoint de 768px.</p>
+            <div class="container-md bg-danger text-white rounded p-3">
+                Exemplo de container MD
+            </div>
+        </section>
+
+        <section class="bg-white exemplo">
+            <span class="etiqueta">.container-lg</span>
+            <h2>Container LG</h2>
+            <p>Limita a largura a partir de telas grandes, com breakpoint de 992px.</p>
+            <div class="container-lg bg-info rounded p-3">
+                Exemplo de container LG
+            </div>
+        </section>
+
+        <section class="bg-white exemplo">
+            <span class="etiqueta">.container-xl</span>
+            <h2>Container XL</h2>
+            <p>Limita a largura a partir de telas extragrandes, com breakpoint de 1200px.</p>
+            <div class="container-xl bg-secondary text-white rounded p-3">
+                Exemplo de container XL
+            </div>
+        </section>
+
+        <section class="bg-white exemplo">
+            <span class="etiqueta">.container-xxl</span>
+            <h2>Container XXL</h2>
+            <p>Limita a largura a partir de telas muito grandes, com breakpoint de 1400px.</p>
+            <div class="container-xxl bg-dark text-white rounded p-3">
+                Exemplo de container XXL
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="mb-0">Estudo de Desenvolvimento Web | Bootstrap 5.3.3</p>
+    </footer>
+
+</body>
+</html>
